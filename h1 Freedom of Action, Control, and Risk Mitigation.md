@@ -17,7 +17,11 @@ Kotiverkkoni muodostaa internet yhteyden reitittimen kautta. Opiskelussa käytä
 Yksinkertainen diagrammi kotiverkosta.
 <img width="1181" height="516" alt="image" src="https://github.com/user-attachments/assets/651966f0-740f-49c0-a418-69cb36f02893" />
 
-## B)
+## B) 
+Kotiverkon ISMS:ssä minä toimin ympäristön omistajana ja teen päätökset tietoturvasta. Kurssin opettajat ovat kiinnostunut osapuoli, koska he odottavat, että opiskelussa käytettyä ympäristöä ja verkkoa käytetään turvallisesti ja kurssin sääntöjen mukaisesti.
+
+<img width="2338" height="821" alt="image" src="https://github.com/user-attachments/assets/5dcfa5b8-5b70-44f7-91f5-0655071d4fe7" />
+
 
 
 
