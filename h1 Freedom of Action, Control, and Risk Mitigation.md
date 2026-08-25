@@ -22,7 +22,9 @@ Kotiverkon ISMS:ssä minä toimin ympäristön omistajana ja teen päätökset t
 
 <img width="2338" height="821" alt="image" src="https://github.com/user-attachments/assets/5dcfa5b8-5b70-44f7-91f5-0655071d4fe7" />
 
-
+---
+## Lähteet
+h1 Freedom of Action, Control, and Risk Mitigation  Luettavissa:https://terokarvinen.com/application-hacking/#laksyt Luettu: 25.8.2026
 
 
 
