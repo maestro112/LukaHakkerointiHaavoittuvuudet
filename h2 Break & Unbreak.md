@@ -13,7 +13,7 @@
 ## Tiivistelmät
 ### Karvinen 2006: Report Writing (in Finnish)
 * Raportin täytyy olla täsmällinen ja tekstin helppolukuista.
-* Ympäristö jossa testit täytyy olla mainittu
+* Ympäristö jossa testit on suoritettu täytyy olla mainittu
 
 ### Find Hidden Web Directories - Fuzz URLs with ffuf
 * Ei halutut vastaukset täytyy filtteröidä pois tässä tapauksessa koon (bytes) mukaan.
@@ -31,9 +31,9 @@
 
 ### a) 010 - Staff Only 
 
-- Testiympäristön pystyyn saadessani aivan ensimmäisenä kokkeilin itse http linkkiin erilaisia asioita kuten /admin/ toivoen että jotain tapahtuisi. Yllätys mitään ei tapahtunut. 
+- Testiympäristön pystyyn saadessani aivan ensimmäisenä kokeilin http linkkiin erilaisia asioita kuten /admin/ toivoen että jotain tapahtuisi. Yllätys mitään ei tapahtunut. 
 
-- Seuraavaksi vaihdoin lähestymis tapaani. Koska kenttään ei voinut syöttää kuin numeroita lähdin leikkimään sivun html koodin kanssa. Löysin kohdan input **type=”number”**. Kokeilin poistaa koodista number kohdan eli jäljelle jäi **input type=” ”**. Tämän jälkeen kun kokeilin kirjoittaa kenttään **-** vastaukseksi tuli **(not found)** eikä sivu herjannut siitä että kentässä ei ollut numeroa. 
+- Seuraavaksi vaihdoin lähestymistapaani. Koska kenttään ei voinut syöttää kuin numeroita lähdin leikkimään sivun html koodin kanssa. Löysin kohdan input **type=”number”**. Kokeilin poistaa koodista number kohdan eli jäljelle jäi **input type=” ”**. Tämän jälkeen kun kokeilin kirjoittaa kenttään **-** vastaukseksi tuli **(not found)** eikä sivu herjannut siitä että kentässä ei ollut numeroa. 
 
 <img width="257" height="47" alt="image" src="https://github.com/user-attachments/assets/efd0f9b6-e62a-48f9-a8c8-4d1c165279fb" />
 
@@ -61,17 +61,17 @@
 <img width="479" height="20" alt="image" src="https://github.com/user-attachments/assets/7f6c74f5-dd6d-41e3-b22d-f50bbed5384b" />
 
 
-- Eli käyttäjältä tuleva syöte pitäisi filtteröidä. En osannut tähänkään luoda omaa vastausta joten katsoin taas Robinilta apua. Kokeilin tämän jälkeen itse lisätä Robinin näyttämät korjaukset sovelluksen koodiin jonka jälkeen kyseinen hyökkäys tapa ei enään onnistunut.
+- Eli käyttäjältä tuleva syöte pitäisi filtteröidä. En osannut tähänkään luoda omaa vastausta joten katsoin taas Robinilta apua. Kokeilin tämän jälkeen itse lisätä Robinin näyttämät korjaukset sovelluksen koodiin jonka jälkeen kyseinen hyökkäys tapa ei enää onnistunut.
  
 <img width="1031" height="348" alt="image" src="https://github.com/user-attachments/assets/255865a0-76d2-4fce-8776-67cef930de76" />
 
 ### 010 Loppu ajatukset
-  - Uskon että tämän kaltainen hyökkkäys onnistuisi aikalailla millä tahansa sivulla/sovelluksessa jossa ei filtteröidä käyttäjän tekstiä se on aika iso moka jos näin käy.
-  - Opin 010 tehtästä lisää phytonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
+  - Uskon että tämän kaltainen hyökkäys onnistuisi aikalailla millä tahansa sivulla/sovelluksessa jossa ei filtteröidä käyttäjän tekstiä se on aika iso moka jos näin käy.
+  - Opin 010 tehtästä lisää Pythonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
     
 ---
 ### c) Solve dirfuzt-1
-- Aloitin tehtävän lataamalla ja ajamalla dirfuzt-1 tiedoston. Ennen ajamista minun täytyi antaa tiedostolle ajo oikeudet.
+- Aloitin tehtävän lataamalla ja ajamalla dirfuzt-1 tiedoston. Ennen ajamista minun täytyi antaa tiedostolle ajo-oikeudet.
 
 <img width="474" height="14" alt="image" src="https://github.com/user-attachments/assets/bcb2dea6-c3b2-4e0c-947e-3122962599d4" />
 
@@ -93,7 +93,7 @@
 
 <img width="743" height="150" alt="image" src="https://github.com/user-attachments/assets/d59d979d-8153-46cf-bd72-9512b10d231a" />
 
-Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja versionhallinta sivut löytyivat osoiteilla **/.git/** ja **wp-admin**. 
+Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja versionhallinta sivut löytyivät osoitteista **/.git/** ja **wp-admin**. 
 
 <img width="688" height="255" alt="image" src="https://github.com/user-attachments/assets/b7da6ecf-e3bb-465a-a9ab-da4d0f28ed12" />
 
@@ -103,7 +103,7 @@ Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja version
 ---
 ### d) 020 - Your Eyes Only
 
-- Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Käytin **Find Hidden Web Directories** ohjeista common.txt tiedostoa jolla lähdin kokeilemaan. 
+- Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan aiemmin esiteltyä ffuf-työkalua. Käytin **Find Hidden Web Directories** ohjeista common.txt tiedostoa jolla lähdin kokeilemaan. 
 
 <img width="410" height="18" alt="image" src="https://github.com/user-attachments/assets/0232a268-8cae-4104-b274-5cf855fb8f68" />
 
@@ -132,7 +132,7 @@ Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja version
 <img width="669" height="158" alt="image" src="https://github.com/user-attachments/assets/1c46a725-9d80-405b-a587-949bd04ade1e" />
 
 
-- Tämän jälkeen ainut asia mitä oikeastaan tein oli että kopioin ylemmästä koodi pätkästä lopun ja lisäsin sen alempaan.
+- Tämän jälkeen ainut asia mitä oikeastaan tein oli että kopioin ylemmästä koodipätkän lopun ja lisäsin sen alempaan.
 
 <img width="693" height="174" alt="image" src="https://github.com/user-attachments/assets/ef4020ac-68f4-4c56-8901-41ed0901784b" />
 
@@ -142,7 +142,7 @@ Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja version
 
 ### 020 Loppu ajatukset
 - Tässä tehtävässä näkyy juurikin kulunvalvonnan tärkeys.
-  - Kuvitellaan että tässä skenaariossa koodarilla oli unohtunut koodi pätkä. Jolloin tarkastettiin että kyseessä on vain **käyttäjä** mutta ei oieukksia.
+  - Kuvitellaan että tässä skenaariossa koodarilla oli unohtunut koodipätkä. Jolloin tarkastettiin että kyseessä on vain **käyttäjä** mutta ei oikeuksia.
 - Opin 020 tehtävässä käyttämään ja hyödyntämään fuff:ia 
 
 ## Lähteet
