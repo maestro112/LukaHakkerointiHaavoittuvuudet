@@ -31,13 +31,16 @@ Seuraavaksi vaihdoin lähestymis tapaani. Koska kenttään ei voinut syöttää 
 
 <img width="257" height="47" alt="image" src="https://github.com/user-attachments/assets/efd0f9b6-e62a-48f9-a8c8-4d1c165279fb" />
 
+
 Kokeilin seuraavaksi ‘ Select *  jolloin koko sivu meni rikki. 
 
 <img width="948" height="129" alt="image" src="https://github.com/user-attachments/assets/fe149424-25e7-43bb-aeba-253acfb2511f" />
 
+
 Seuraavaksi kokeilin “klassista” ‘ OR 1=1– jolloin salasana kohtaan tulostui foo.
 
 <img width="740" height="241" alt="image" src="https://github.com/user-attachments/assets/42c8c18b-621b-4295-b7d0-5fc4b18ed25e" />
+
 
 Tämän jälkeen en saanut muita tuloksia enkä osannut liikkua eteenpäin nykyisellä osaamisellani joten käännyin vinkkien puoleen. Tämänkään jälkeen en oikein osannut liikkua eteenpäin joten käännyin Robin Niinemets 2024: h2 - Break and Unbreak (solution) puoleen. 
 
@@ -52,6 +55,7 @@ Korjausta miettiessäni aloin epäilemään että käyttäjältä tulevaa syöte
 
 <img width="479" height="20" alt="image" src="https://github.com/user-attachments/assets/7f6c74f5-dd6d-41e3-b22d-f50bbed5384b" />
 
+
 Eli käyttäjältä tuleva syöte pitäisi filtteröidä. En osannut tähänkään luoda omaa vastausta joten katsoin taas Robinilta apua. Kokeilin tämän jälkeen itse lisätä Robinin näyttämät korjaukset sovelluksen koodiin jonka jälkeen kyseinen hyökkäys tapa ei enään onnistunut.
 
 <img width="1031" height="348" alt="image" src="https://github.com/user-attachments/assets/255865a0-76d2-4fce-8776-67cef930de76" />
@@ -59,13 +63,15 @@ Eli käyttäjältä tuleva syöte pitäisi filtteröidä. En osannut tähänkä�
 ---
 ### c
 
-Kun olin saanut harjoitus sivuston toimimaan teron ohjeiden mukaisesti lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Latasin **Find Hidden Web Directories** ohjeista common.txt tiedoston jolla lähdin kokeilemaan. 
+Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Latasin **Find Hidden Web Directories** ohjeista common.txt tiedoston jolla lähdin kokeilemaan. 
 
 <img width="410" height="18" alt="image" src="https://github.com/user-attachments/assets/0232a268-8cae-4104-b274-5cf855fb8f68" />
+
 
 Tämän jälkeen sain vastaukseksi. 
 
 <img width="734" height="21" alt="image" src="https://github.com/user-attachments/assets/f7e3a215-fbf9-4daa-8557-528ae23011c1" />
+
 
 Lähdin heti tämän jälkeen kokeilemaan hakukentään osoitetta http://127.0.0.1:8000/admin-console/ mutta mitään ei tapahtunut. Kokeilin tämän jälkeen luoda käyttäjän ja kirjautua sisään jonka jälkeen syötin hakukenttään taas  http://127.0.0.1:8000/admin-console/ ja boom salainen sivu löytyi. 
 
@@ -74,19 +80,22 @@ Lähdin heti tämän jälkeen kokeilemaan hakukentään osoitetta http://127.0.0
 ---
 ### d)
 
-Lähtiessäni korjaamaan tätä ongelmaa uskoin että näin tapahtui koska minun käyttäjän oikeuksia ei tarkastettu kunnolla joten pääsin admin secret sivulle.
+Lähtiessäni korjaamaan tätä ongelmaa uskoin että näin tapahtui koska minun käyttäjäni oikeuksia ei tarkastettu kunnolla joten pääsin admin secret sivulle.
 
-Selasin vähän yli tunnin eri python tiedostoja kunnes päädyin **/020-your-eyes-only/logtin/hats/views.py** tiedostoon. Täällä tämä kohta iski silmiini. Tässä kohtaa selvästikin tarkistetaan käyttäjän oikeuksia.
+Selasin jonkin aikaa eri python tiedostoja kunnes päädyin **/020-your-eyes-only/logtin/hats/views.py** tiedostoon. Täällä tämä kohta iski silmiini. Tässä kohtaa selvästikkin tarkistetaan käyttäjän oikeuksia.
 
 <img width="689" height="332" alt="image" src="https://github.com/user-attachments/assets/6696f6d3-986f-41f7-86c8-13236843083d" />
 
-Huomasin että AdminShowALLView kohdassa näyttäisi puuttuvan oikeuksien tarkastus ja että tarkastetaan että kyseessä on vain käyttäjä.
+
+Huomasin että **AdminShowALLView** kohdassa näyttäisi puuttuvan oikeuksien tarkastus ja katsotaan vain että kyseessä on käyttäjä.
 
 <img width="669" height="158" alt="image" src="https://github.com/user-attachments/assets/1c46a725-9d80-405b-a587-949bd04ade1e" />
 
-Jonka jälkeen ainut asia mitä oikeastaan tein oli että kopioin ylemmästä koodi pätkästä lopun ja lisäsin sen alempaan.
+
+Tämän jälkeen ainut asia mitä oikeastaan tein oli että kopioin ylemmästä koodi pätkästä lopun ja lisäsin sen alempaan.
 
 <img width="693" height="174" alt="image" src="https://github.com/user-attachments/assets/ef4020ac-68f4-4c56-8901-41ed0901784b" />
+
 
 Tämän jälkeen en päässyt enään sivulle.
 
