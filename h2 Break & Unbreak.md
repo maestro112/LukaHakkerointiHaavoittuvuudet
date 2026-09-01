@@ -70,7 +70,11 @@
   - Opin 010 tehtästä lisää phytonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
     
 ---
-### c) 020 - Your Eyes Only
+### c) Solve dirfuzt-1
+
+
+---
+### d) 020 - Your Eyes Only
 
 - Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Latasin **Find Hidden Web Directories** ohjeista common.txt tiedoston jolla lähdin kokeilemaan. 
 
@@ -87,7 +91,7 @@
 <img width="1076" height="491" alt="image" src="https://github.com/user-attachments/assets/b35e78e7-987c-4771-8d2f-688e84a2386c" />
 
 ---
-### d) 020 - Your Eyes Only (Fix)
+### e) 020 - Your Eyes Only (Fix)
 
 - Lähtiessäni korjaamaan tätä ongelmaa uskoin että näin tapahtui koska minun käyttäjäni oikeuksia ei tarkastettu kunnolla joten pääsin admin secret sivulle.
 
