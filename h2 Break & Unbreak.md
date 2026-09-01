@@ -1,8 +1,8 @@
 # h2 Break & Unbreak
 
 ## Testiympäristö
-- VirtualBox kali linux 
-  - Debian 64bit
+- Oracle VirtualBox  
+  - kali linux Debian 64bit
   - 6 ydintä
   - Ram 9100MB
   - hdd 20GB
