@@ -71,12 +71,39 @@
     
 ---
 ### c) Solve dirfuzt-1
+- Aloitin tehtävän lataamalla ja ajamalla dirfuzt-1 tiedoston. Ennen ajamista minun täytyi antaa tiedostolle ajo oikeudet.
+
+<img width="474" height="14" alt="image" src="https://github.com/user-attachments/assets/bcb2dea6-c3b2-4e0c-947e-3122962599d4" />
+
+<img width="272" height="69" alt="image" src="https://github.com/user-attachments/assets/28977f86-103e-4d29-b089-d17c40953c67" />
+
+- Sitten latasin fuff:in ja common.txt tiedoston komennoilla.
+  
+  ````bash
+  $ sudo apt-get update
+  $ sudo apt-get install ffuf
+  $ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt
+  
+  ````
+- Ajoin sitten fuff ohjelman common.txt listalla ja sain läjän tekstiä.
+
+<img width="724" height="524" alt="image" src="https://github.com/user-attachments/assets/5686de75-e66d-48e3-be63-887658d010c5" />
+
+- Seuraavaksi suodatin pois rivit joiden pituus oli 10 sillä lähes kaikki näyttivät olevan sen pituisia. Tein tämän lisäämällä aiempaan suoritus komentoon **-fl 10** eli kaikki 10 rivin tulokset jätetään pois
+
+<img width="743" height="150" alt="image" src="https://github.com/user-attachments/assets/d59d979d-8153-46cf-bd72-9512b10d231a" />
+
+Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja versionhallinta sivut löytyivat osoiteilla **/.git/** ja **wp-admin**. 
+
+<img width="688" height="255" alt="image" src="https://github.com/user-attachments/assets/b7da6ecf-e3bb-465a-a9ab-da4d0f28ed12" />
+
+<img width="846" height="225" alt="image" src="https://github.com/user-attachments/assets/06969242-e7b5-4c61-b3d5-f771004dc851" />
 
 
 ---
 ### d) 020 - Your Eyes Only
 
-- Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Latasin **Find Hidden Web Directories** ohjeista common.txt tiedoston jolla lähdin kokeilemaan. 
+- Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Käytin **Find Hidden Web Directories** ohjeista common.txt tiedostoa jolla lähdin kokeilemaan. 
 
 <img width="410" height="18" alt="image" src="https://github.com/user-attachments/assets/0232a268-8cae-4104-b274-5cf855fb8f68" />
 
