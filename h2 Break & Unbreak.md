@@ -1,29 +1,35 @@
 # h2 Break & Unbreak
 
 ## Testiympäristö
-VirtualBox kali linux 
-
-Selain: FireFox
-
+- VirtualBox kali linux 
+  - Debian 64bit
+  - 6 ydintä
+  - Ram 9100MB
+  - hdd 20GB
+    
+- Selain: FireFox
+  - Versio ESR 140.13.0 (64-bit)
 ---
 ## Tiivistelmät
-* **Karvinen 2006: Report Writing (in Finnish)**
-  * Raportin täytyy olla täsmällinen ja tekstin helppolukuista.
+### Karvinen 2006: Report Writing (in Finnish)
+* Raportin täytyy olla täsmällinen ja tekstin helppolukuista.
+* Ympäristö jossa testit täytyy olla mainittu
 
-* **Find Hidden Web Directories - Fuzz URLs with ffuf**
-   * Ei halutut vastaukset täytyy filtteröidä pois tässä tapauksessa koon (bytes) mukaan.
-   * kaikki fuff parametrit näkee komennolla ./fuff
+### Find Hidden Web Directories - Fuzz URLs with ffuf
+* Ei halutut vastaukset täytyy filtteröidä pois tässä tapauksessa koon (bytes) mukaan.
+* Fuffia käytetään piilotettujen sivujen/hakemistojen löytämiseen 
 
-* **A01:2021 – Broken Access Control**
-  * Broken Access Control tarkoittaa käyttöoikeuksien hallinnan puutteita, joiden avulla käyttäjä voi päästä käsiksi tietoihin tai toimintoihin, joihin hänellä ei pitäisi olla oikeuksia.
-  * Sovelluksessa tulisi käyttää keskitettyjä käyttöoikeus käytäntöjä sekä varmistaa, että käyttäjä voi käsitellä vain omia tietojaan ja suorittaa heille sallittuja toimintoja. 
+### A01:2021 – Broken Access Control
+* Broken Access Control tarkoittaa käyttöoikeuksien hallinnan puutteita, joiden avulla käyttäjä voi päästä käsiksi tietoihin tai toimintoihin, joihin hänellä ei pitäisi olla oikeuksia.
+* Sovelluksessa tulisi käyttää keskitettyjä käyttöoikeus käytäntöjä sekä varmistaa, että käyttäjä voi käsitellä vain omia tietojaan ja suorittaa heille sallittuja toimintoja. 
 
-* **Access control vulnerabilities and privilege escalation**
-  * Pääsynvalvonta säätelee pysty-, vaaka- ja kontekstiriippuvaisesti sitä, mitä toimintoja ja resursseja kukin käyttäjä saa käyttää.
+### Access control vulnerabilities and privilege escalation
+* Kulunvalvonta säätelee pysty-, vaaka- ja kontekstiriippuvaisesti sitä, mitä toimintoja ja resursseja kukin käyttäjä saa käyttää.
+  * Huonosti toteutettu/viallinen kulunvalvonta voi johtaa siihen että joku pääsee jonnekkin johon sen ei kuuluisi päästä.
 ---
 ## Tehtävät 
 
-### a) 
+### a) 010 - Staff Only 
 
 - Testiympäristön pystyyn saadessani aivan ensimmäisenä kokkeilin itse http linkkiin erilaisia asioita kuten /admin/ toivoen että jotain tapahtuisi. Yllätys mitään ei tapahtunut. 
 
@@ -48,7 +54,7 @@ Selain: FireFox
 <img width="1038" height="354" alt="image" src="https://github.com/user-attachments/assets/23f8e096-11fe-49e8-99b7-60341b9058b4" />
 
 ---
-### b)
+### b)  010 - Staff Only (Fix)
 
 - Korjausta miettiessäni aloin epäilemään että käyttäjältä tulevaa syötettä ei suodateta mitenkään. Epäilin näin löytämäni koodipätkän vuoksi ja siksi että se on hyvin yleinen syy SQL injektioissa.
 
@@ -56,11 +62,15 @@ Selain: FireFox
 
 
 - Eli käyttäjältä tuleva syöte pitäisi filtteröidä. En osannut tähänkään luoda omaa vastausta joten katsoin taas Robinilta apua. Kokeilin tämän jälkeen itse lisätä Robinin näyttämät korjaukset sovelluksen koodiin jonka jälkeen kyseinen hyökkäys tapa ei enään onnistunut.
-
+ 
 <img width="1031" height="348" alt="image" src="https://github.com/user-attachments/assets/255865a0-76d2-4fce-8776-67cef930de76" />
 
+### 010 Loppu ajatukset
+  - Uskon että tämän kaltainen hyökkkäys onnistuisi aikalailla millä tahansa sivulla/sovelluksessa jossa ei filtteröidä käyttäjän tekstiä se on aika iso moka jos näin käy.
+  - Opin 010 tehtästä lisää phytonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
+    
 ---
-### c
+### c) 020 - Your Eyes Only
 
 - Kun olin saanut harjoitus sivuston toimimaan lähdin heti ensimmäisenä kokeilemaan tunnilla esiteltyä ffuf:ia. Latasin **Find Hidden Web Directories** ohjeista common.txt tiedoston jolla lähdin kokeilemaan. 
 
@@ -77,7 +87,7 @@ Selain: FireFox
 <img width="1076" height="491" alt="image" src="https://github.com/user-attachments/assets/b35e78e7-987c-4771-8d2f-688e84a2386c" />
 
 ---
-### d)
+### d) 020 - Your Eyes Only (Fix)
 
 - Lähtiessäni korjaamaan tätä ongelmaa uskoin että näin tapahtui koska minun käyttäjäni oikeuksia ei tarkastettu kunnolla joten pääsin admin secret sivulle.
 
@@ -86,7 +96,7 @@ Selain: FireFox
 <img width="689" height="332" alt="image" src="https://github.com/user-attachments/assets/6696f6d3-986f-41f7-86c8-13236843083d" />
 
 
-- Huomasin että **AdminShowALLView** kohdassa näyttäisi puuttuvan oikeuksien tarkastus ja katsotaan vain että kyseessä on käyttäjä.
+- Huomasin että **AdminShowALLView** kohdassa näyttäisi puuttuvan oikeuksien tarkastus ja tarkastetaan vain että kyseessä on käyttäjä.
 
 <img width="669" height="158" alt="image" src="https://github.com/user-attachments/assets/1c46a725-9d80-405b-a587-949bd04ade1e" />
 
@@ -95,10 +105,14 @@ Selain: FireFox
 
 <img width="693" height="174" alt="image" src="https://github.com/user-attachments/assets/ef4020ac-68f4-4c56-8901-41ed0901784b" />
 
-
 - Tämän jälkeen en päässyt enään sivulle.
 
 <img width="1074" height="236" alt="image" src="https://github.com/user-attachments/assets/f5f6e3d2-81af-4a66-b955-3cd2654937a1" />
+
+### 020 Loppu ajatukset
+- Tässä tehtävässä näkyy juurikin kulunvalvonnan tärkeys.
+  - Kuvitellaan että tässä skenaariossa koodarilla oli unohtunut koodi pätkä. Jolloin tarkastettiin että kyseessä on vain **käyttäjä** mutta ei oieukksia.
+- Opin 020 tehtävässä käyttämään ja hyödyntämään fuff:ia 
 
 ## Lähteet
 
