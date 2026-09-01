@@ -67,14 +67,15 @@
 
 ### 010 Loppu ajatukset
   - Uskon että tämän kaltainen hyökkäys onnistuisi aikalailla millä tahansa sivulla/sovelluksessa jossa ei filtteröidä käyttäjän tekstiä se on aika iso moka jos näin käy.
-  - Opin 010 tehtästä lisää Pythonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
+  - Opin 010 tehtävästä lisää Pythonia ja ymmärsin taas hieman enemmän SQL-injektion logiikkaa.
     
 ---
 ### c) Solve dirfuzt-1
+
 - Aloitin tehtävän lataamalla ja ajamalla dirfuzt-1 tiedoston. Ennen ajamista minun täytyi antaa tiedostolle ajo-oikeudet.
 
 <img width="474" height="14" alt="image" src="https://github.com/user-attachments/assets/bcb2dea6-c3b2-4e0c-947e-3122962599d4" />
-
+<br>
 <img width="272" height="69" alt="image" src="https://github.com/user-attachments/assets/28977f86-103e-4d29-b089-d17c40953c67" />
 
 - Sitten latasin fuff:in ja common.txt tiedoston komennoilla.
@@ -140,10 +141,13 @@ Tämän jälkeen lähdin yksi kerrallaan kokeilemaan osotteita. Admin ja version
 
 <img width="1074" height="236" alt="image" src="https://github.com/user-attachments/assets/f5f6e3d2-81af-4a66-b955-3cd2654937a1" />
 
-### 020 Loppu ajatukset
-- Tässä tehtävässä näkyy juurikin kulunvalvonnan tärkeys.
+### 020 & Solve dirfuzt-1 loppu ajatukset
+- 020 tehtävässä näkyi juurikin kulunvalvonnan tärkeys.
   - Kuvitellaan että tässä skenaariossa koodarilla oli unohtunut koodipätkä. Jolloin tarkastettiin että kyseessä on vain **käyttäjä** mutta ei oikeuksia.
-- Opin 020 tehtävässä käyttämään ja hyödyntämään fuff:ia 
+    
+- Opin 020 ja Solve dirfuzt-1 tehtävissä käyttämään ja hyödyntämään fuff:ia
+  - Tulosten suodattaminen on hyvin tärkeää
+
 
 ## Lähteet
 
