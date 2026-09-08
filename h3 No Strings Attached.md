@@ -16,7 +16,7 @@
 
 * Aloitin tämän tehtävän lataamalla ja purkamalla ezbin-challenges.zip tiedoston. Tämän jälkeen käynnistin ohjelman ja aloitin itse tehtävän.
 
-  <img width="389" height="199" alt="image" src="https://github.com/user-attachments/assets/cd7b514d-d7ad-4d34-9be9-c9055e3a8669" />
+<img width="389" height="199" alt="image" src="https://github.com/user-attachments/assets/cd7b514d-d7ad-4d34-9be9-c9055e3a8669" />
 
 * Tehtävässä täytyy löytää salasana, jota en tiedä. Sen perusteella, että tehtävänannossa lukee **Did you know you can get information from binaries before running them?** ja tipeissä luki, että käytä **strings** nimistä ohjelmaa, päätin kokeilla sitä ensimmäisenä. Googletin ensin kuitenkin, mikä strings-ohjelma on. Strings työkalulla voidaan tulostaa nopeasti binääritiedostoista luettavia tekstiosuuksia. Tämän jälkeen kokeilin strings komentoa, ja kuten kuvassa näkyy, oikea salasana taisi löytyä.
 
@@ -74,7 +74,7 @@ int main() {
 
 <img width="619" height="91" alt="image" src="https://github.com/user-attachments/assets/914910a1-6db0-41c8-9804-4c4e813fda57" />
 
-* Mitä itse ymmärsin, niin Claude on päätynyt käyttämään ratkaisussaan XOR-obfuscation metodia.
+* Mitä itse ymmärsin, niin Claude on päätynyt käyttämään ratkaisussaan XOR-obfuscation metodia. Eli koska strings komento etsii binääristä lähinnä tulostettavia ASCII merkkijonoja sellaisenaan niin se ei näe salasanaa mikä on muunnettu XOR metodilla. 
 
 * Päätin vielä C tehtävän **jälkeen** kokeilla pakata passtr tiedoston käyttäen UPX ohjelmaa. En usko, että tätä lasketaan, koska salasanasta näyttäisi puuttuvan vain kirjaimet **ha**, jotka voisi vain arvata, mutta mielenkiinnosta kokeilin silti.
 
@@ -84,7 +84,7 @@ int main() {
 
 ## c)
 
-* Tässä tehtävässä lähdin heti ajamaan packd-tiedostoa strings-komennolla. Tulostuksessa näkyy password piilos-An, mutta se ei ole oikein.
+* Tässä tehtävässä lähdin heti ajamaan packd-tiedostoa strings-komennolla. Tulostuksessa näkyy password **piilos-An**, mutta se ei ole oikein.
 
 <img width="286" height="65" alt="image" src="https://github.com/user-attachments/assets/eca1a337-8b8d-4686-b0a0-2e4819ac6610" />
 
@@ -114,6 +114,9 @@ upx -d packd
 
 **(a kohta)**
 2009 Free Software Foundation Inc. strings(1) - Linux man page. Luettavissa: https://linux.die.net/man/1/strings. Luettu: 8.9.2026
+
+(b kohta) 
+Cloude AI (sonnet5)
 
 **(c kohta)**
 The Ultimate Packer for eXecutables 1996–2026, Markus Oberhumer, Laszlo Molnar & John Reiser. Luettavissa: https://github.com/upx/upx/blob/devel/doc/upx-doc.txt. Luettu: 8.9.2026
