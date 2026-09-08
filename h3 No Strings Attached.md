@@ -74,11 +74,11 @@ int main() {
 
 <img width="619" height="91" alt="image" src="https://github.com/user-attachments/assets/914910a1-6db0-41c8-9804-4c4e813fda57" />
 
-* Mitä itse ymmärsin, niin Claude on päätynyt käyttämään ratkaisussaan XOR-obfuscation-metodia.
+* Mitä itse ymmärsin, niin Claude on päätynyt käyttämään ratkaisussaan XOR-obfuscation metodia.
 
 * Päätin vielä C tehtävän **jälkeen** kokeilla pakata passtr tiedoston käyttäen UPX ohjelmaa. En usko, että tätä lasketaan, koska salasanasta näyttäisi puuttuvan vain kirjaimet **ha**, jotka voisi vain arvata, mutta mielenkiinnosta kokeilin silti.
 
-<img width="211" height="53" alt="image" src="https://github.com/user-attachments/assets/1f7af6ea-d109-4026-8405-760c7c15f992" />
+<img width="211" height="53" alt="image" src="https://github.com/user-attachments/assets/1f6476ea-d109-4026-8405-760c7c15f992" />
 
 ---
 
