@@ -30,7 +30,7 @@
 
 ## b)
 
-* Tähän kohtaan en saanut aluksi mitään vastausta. Tavallaan tiesin, mitä pitäisi tehdä, mutta en osannut toimia. Joten päädyin kysymään **Claude AI:lta (Sonnet 5)**, miten se korjaisi koodin niin, että salasana ei näy strings komennolla.
+* Tähän kohtaan en saanut aikaseksi mitään vastausta. Tavallaan tiesin, mitä pitäisi tehdä, mutta en osannut toimia. Joten päädyin kysymään **Claude AI:lta (Sonnet 5)**, miten se korjaisi koodin niin, että salasana ei näy strings komennolla.
 
 * Tässä on Claude AI:n vastaus:
 
