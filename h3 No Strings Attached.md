@@ -18,11 +18,11 @@
 
   <img width="389" height="199" alt="image" src="https://github.com/user-attachments/assets/cd7b514d-d7ad-4d34-9be9-c9055e3a8669" />
 
-* Tehtävässä täytyy löytää salasana, jota en tiedä. Sen perusteella, että tehtävänannossa lukee **Did you know you can get information from binaries before running them?** ja tipeissä luki, että käytä **strings** nimistä ohjelmaa, päätin kokeilla sitä ensimmäisenä. Googletin ensin kuitenkin, mikä strings-ohjelma on. Strings-työkalulla voidaan tulostaa nopeasti binääritiedostoista luettavia tekstiosuuksia. Tämän jälkeen kokeilin strings-komentoa, ja kuten kuvassa näkyy, oikea salasana taisi löytyä.
+* Tehtävässä täytyy löytää salasana, jota en tiedä. Sen perusteella, että tehtävänannossa lukee **Did you know you can get information from binaries before running them?** ja tipeissä luki, että käytä **strings** nimistä ohjelmaa, päätin kokeilla sitä ensimmäisenä. Googletin ensin kuitenkin, mikä strings-ohjelma on. Strings työkalulla voidaan tulostaa nopeasti binääritiedostoista luettavia tekstiosuuksia. Tämän jälkeen kokeilin strings komentoa, ja kuten kuvassa näkyy, oikea salasana taisi löytyä.
 
 <img width="561" height="49" alt="image" src="https://github.com/user-attachments/assets/98a25530-030a-4559-b0c4-c26fa63105e1" />
 
-* Kokeilin vielä itse, ja salasana oli oikein.
+* Kokeilin vielä itse ja salasana oli oikein.
 
 <img width="574" height="92" alt="image" src="https://github.com/user-attachments/assets/3be11f49-b8e1-4f8a-a6f9-66a60f851b71" />
 
