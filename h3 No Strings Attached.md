@@ -2,6 +2,7 @@
 
 ## Testiympäristö
 - Oracle VirtualBox
+  - Version 7.2.4 r170995 (Qt6.8.0 on windows)
 - Kali Linux Debian 64bit
   - 6 ydintä
   - RAM 9100 MB
