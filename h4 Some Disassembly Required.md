@@ -50,7 +50,7 @@ sudo apt install ghidra -y
 
 <img width="518" height="306" alt="image" src="https://github.com/user-attachments/assets/7c04a93c-c1dc-4f5b-b9aa-e3f2920dab04" />
 
-- Mitä itse olen ymmärtänyt, niin käyttäjän antamaa salasanaa kohdassa verrataan **piilos-AnAnAs**-merkkijonoon. Jos palautusarvo on 0, palautetaan lippu, ja jos jokin muu, palautetaan **Sorry no bonus**.
+- Mitä itse olen ymmärtänyt, niin käyttäjän antamaa salasanaa verrataan **piilos-AnAnAs**-merkkijonoon. Jos palautusarvo on 0, palautetaan lippu, ja jos jokin muu, palautetaan **Sorry no bonus**.
 
 ---
 
