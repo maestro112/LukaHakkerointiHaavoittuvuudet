@@ -7,7 +7,7 @@
 - Ghidran heksadesimaalinumero vastaus syötettiin vielä python3 ohjelmassa niin että saatiin desimaali numero.
 
 ---
-# a)  
+# a) Install Ghidra
 Asensin ghidran komenlla 
 ````bash
 sudo apt install ghidra -y
@@ -15,7 +15,7 @@ sudo apt install ghidra -y
 <img width="1306" height="879" alt="image" src="https://github.com/user-attachments/assets/8cc22e96-4f2d-4695-8d56-c279ce6f4d66" />
 
 ---
-## b)
+## b) rever-C
 
 <img width="700" height="362" alt="image" src="https://github.com/user-attachments/assets/13cb08d2-31e6-47f0-b6c2-95a5d4a0af28" />
 - Hetken koodia ihmeteltyäni huomasin että ohjeissa mainitaan packd purkamien joten kävin suorittamassa tämän komennolla
@@ -31,7 +31,8 @@ sudo apt install ghidra -y
 
 - Mitä itse olen ymmärtäny niin kohdassa jossa salasana lukee vertaillaan käyttäjän antamaa salasanaa **piilos-AnAnAs** merkkijonoon. Jos palautus arvo on 0 palautetaan lippu ja jos jokin muu palautetaan **Sorry no bonus**
 
-## c)
+## c) If backwards
+
 - Tässä tehtävässä tein uuden projektin ja importasin siihen passtr ohjelman.
 - Menin heti tutkimaan main funktiota. koodi näyttää samalta kuin packd tehtävässä joten aloin tutkimaan kohtaa jossa tarkastetaan onko salasana oiken. Kun maalasin tämän koodin se näytti minulle kohdan assembly koodissa 
   <img width="533" height="292" alt="image" src="https://github.com/user-attachments/assets/115239c3-4102-4310-9598-f651171cb03c" />
@@ -68,7 +69,8 @@ Korjaamaani koodi toimi.
 
 <img width="1146" height="380" alt="image" src="https://github.com/user-attachments/assets/4d1bbbaa-9952-455a-a3c3-d3a110b990a7" />
 
-## d)
+## d) Nora CrackMe
+
 - Ensimmäisenä latasin tehtävän tiedostot ja tarvittavat ohjelmat suoraan komennoilla
   
 ```bash
@@ -77,9 +79,9 @@ git clone https://github.com/NoraCodes/crackmes.git
 ```bash
 sudo apt install build-essential gcc xxd binutils
 ```
-## e)
+## e)  Nora crackme01 & Nora crackme01e.
 
-### 01
+###  Nora crackme01
 - aivan ensimmäisenä tein koodista ohjelman komenolla 
 ````bash
 make cracme01
@@ -100,7 +102,7 @@ make cracme01
   
 <img width="508" height="117" alt="image" src="https://github.com/user-attachments/assets/79442695-a37c-459f-b749-f7850b1587e0" />
 
-### 01e
+###  Nora crackme01e.
 
 - Tässä tehtävässä tein tismalleen samat temput kuin aiemmassa ja oikea salasana löytyi
   
@@ -114,7 +116,8 @@ make cracme01
 
 <img width="543" height="118" alt="image" src="https://github.com/user-attachments/assets/a549a51f-97c2-4efa-9d99-c71cdb8cff6a" />
 
-## f)
+## f) Nora crackme02.
+
 ### Tässä kohtaa AI käytetty apuna **ChatGPT-5.6 Luna**.
 
 - Taas käännettyäni lähdekodin ohjelmaksi laitoin sen ghidraan ja avasin main funktion
