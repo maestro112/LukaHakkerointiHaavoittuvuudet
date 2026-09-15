@@ -121,11 +121,8 @@ sudo apt install build-essential gcc xxd binutils
 make cracme01
 ```
 
-- Seuraavaksi avasin crackme01-koodin Ghidrassa. Päätin lähteä ratkomaan tätä tehtävää kokeilemalla eri näkymiä **Window**-kohdassa.
-
-<img width="502" height="1186" alt="image" src="https://github.com/user-attachments/assets/77acf62c-6e55-41fe-aa5c-629e9ec3f5c4" />
-
-- Kokeillessani Defined Strings -kohdassa löysin **password1**.
+- Seuraavaksi avasin crackme01-koodin Ghidrassa. Päätin lähteä ratkomaan tätä tehtävää kokeilemalla eri näkymiä **Window**-kohdassa
+   - Defined Strings kohdassa löysin **password1**.
 
 <img width="984" height="36" alt="image" src="https://github.com/user-attachments/assets/87e89e73-b7d2-4531-b964-5b179b906a04" />
 
