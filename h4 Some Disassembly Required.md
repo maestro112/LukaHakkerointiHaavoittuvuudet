@@ -174,7 +174,7 @@ make cracme01
   - `cVar2` -> `previous_char`
   - `uVar3` -> `return_value`
 
-- Koska en ole kovin hyvä C-kielessä, käytin tässä kohtaa **ChatGPT**-apuna. Miten itse ymmärsin, niin ohjelmassa oleva 'password1' toimii ikään kuin mallina, mutta ohjelma odottaa jokaisesta sen merkistä ASCII-arvoltaan yhden pienempää merkkiä. Siksi oikea salasana on o\rrvnqc0`.
+- Koska en ole kovin hyvä C-kielessä, käytin tässä kohtaa **ChatGPT**-apuna. Miten itse ymmärsin, niin ohjelmassa oleva `password1` toimii ikään kuin mallina, mutta ohjelma odottaa jokaisesta merkistä ASCII-arvoltaan yhden pienempää merkkiä syötteessä. Siksi oikea salasana on o\rrvnqc0`.
 
 - Ja taas salasana **'** sisälle.
 
@@ -188,4 +188,4 @@ make cracme01
 - Some Crackmes Luettavissa:https://github.com/NoraCodes/crackmes Luettu: 15.9.2026
 - An Intro to x86_64 Reverse Engineering. Leonora Tindall 2017. Luettavissa:https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/ Luettu: 15.9.2026
 - GHIDRA for Reverse Engineering. John Hammond katsottavissa:https://www.youtube.com/watch?v=oTD_ki86c9I katsottu 15.9.2026
-- (f kohta) **ChatGPT-5.6 Luna**
+- (f kohta) ja oikeinkirjoitus **ChatGPT-5.6 Luna**
