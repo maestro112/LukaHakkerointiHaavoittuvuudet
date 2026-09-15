@@ -89,7 +89,6 @@ sudo apt install ghidra -y
 
 - Koska en osaa juuri paljoa C-kieltä, lähdin korjaamaan koodia jo ennestään toimivan koodin perusteella.
 
-<img width="779" height="592" alt="image" src="https://github.com/user-attachments/assets/f0e232e4-3bce-453a-b15e-1a0ccb7acd85" />
 <img width="2008" height="762" alt="image" src="https://github.com/user-attachments/assets/79bbb001-3bb7-459e-b6cd-65c0a47eb0b0" />
 
 - Korjaamani koodi toimi.
