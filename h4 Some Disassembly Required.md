@@ -146,7 +146,7 @@ make cracme01
 
 <img width="559" height="107" alt="image" src="https://github.com/user-attachments/assets/156f6492-a53a-403a-85b1-3bf8da2c5288" />
 
-- Hetken ratkaisua etsittyäni löysin, että **!** tarkoittaa, että etsitään edellistä komentoa, eli tässä tapauksessa yritetään etsiä **paak.k.** Salasanan täytyy olla suljettu **'**-merkeillä.
+- Hetken ratkaisua etsittyäni löysin, että bash **!** tarkoittaa, että etsitään edellistä komentoa, eli tässä tapauksessa yritetään etsiä **paak.k.** Salasanan täytyy olla suljettu siis **'** merkeillä.
 
 <img width="543" height="118" alt="image" src="https://github.com/user-attachments/assets/a549a51f-97c2-4efa-9d99-c71cdb8cff6a" />
 
