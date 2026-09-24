@@ -102,6 +102,12 @@
 
 ---
 
+## Mitä opin?
+- Näissä tehtävissä opin uusia komentoja GDB:llä ja miten niitä käytetään.
+- Lukemaan lisää assenblyä.
+
+---
+
 ## Lähteet
 - [Terokarvinen.com](https://terokarvinen.com/)
 - [gdb - Linux manual pages](https://www.man7.org/linux/man-pages/man1/gdb.1.html)
